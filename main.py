@@ -50,35 +50,35 @@ def callback_inline(call):
         elif call.data == "Давай поболтаем":
             @bot.message_handler(content_types=["text"])
             def text_messages(message):
-                if message.text == 'Привет':
+                if message.text.lower() == 'привет':
                     bot.send_message(call.message.chat.id, "Привет! Расскажите что-нибудь веселенькое:))")
-                elif message.text == 'Как настроение?':
+                elif message.text.lower() == 'как настроение?':
                     bot.send_message(call.message.chat.id, "У меня отличное настроение. А у вас?")
-                elif message.text == 'Доброе утро':
+                elif message.text.lower() == 'доброе утро':
                     bot.send_message(call.message.chat.id, "Доброе утро")
-                elif message.text == 'Добрый день':
+                elif message.text.lower() == 'добрый день':
                     bot.send_message(call.message.chat.id, "Добрый день")
-                elif message.text == 'Сколько тебе лет?':
+                elif message.text.lower() == 'сколько тебе лет?':
                     bot.send_message(call.message.chat.id, "Вопрос некорректный и скорее бесполезный. Я робот(программа) Меня запустили на сервере 6 Сентября 2020 года. \nЯ не старею, а только совершенствуюсь. И работаю пока люди во мне \nнуждаются")
-                elif message.text == 'Прости, если обидел':
+                elif message.text.lower() == 'прости, если обидел':
                     bot.send_message(call.message.chat.id, "Да ну, что вы. Я не обижаюсь. \nРоботы не обижаются и программы тоже)). \nРасскажи что-нибудь веселенькое-:)")
-                elif message.text == 'Веселое':
+                elif message.text.lower() == 'веселое':
                     bot.send_message(call.message.chat.id, "Вот и отлично:) Давайте общаться.")
-                elif message.text == 'Спасибо':
+                elif message.text.lower() == 'спасибо':
                     bot.send_message(call.message.chat.id, "Рад вас развеселить:-)")
-                elif message.text == 'Благодарю':
+                elif message.text.lower() == 'благодарю':
                     bot.send_message(call.message.chat.id, "Не стоит благодарностей. Всегда к вашим услугам-)")
-                elif message.text == 'грустное':
+                elif message.text.lower() == 'грустное':
                     bot.send_message(call.message.chat.id, "Я вас развеселю -^--^-, просто нажми Давай пошутим-^--^-", reply_markup = keyboard2)
-                elif message.text == 'Как погода?':
+                elif message.text.lower() == 'как погода?':
                     bot.send_message(call.message.chat.id, "Пасмурно или солнечно, холодно или жарко. Чтобы это понять выгляните в окно или спросите у яндекса или гугла. https://yandex.ru/pogoda/213")
-                elif message.text == 'Пока':
+                elif message.text.lower() == 'пока':
                     bot.send_message(call.message.chat.id, "Уже уходишь? ну тогда пока.")
-                elif message.text == 'Как дела?':
+                elif message.text.lower() == 'как дела?':
                     bot.send_message(call.message.chat.id, "Отлично! А у тебя?")
-                elif message.text == 'Тоже отлично':
+                elif message.text.lower() == 'тоже отлично':
                     bot.send_message(call.message.chat.id, "Ну отлично! тогда повеселимся.")
-                elif message.text == 'Спокойной ночи':
+                elif message.text.lower() == 'спокойной ночи':
                     bot.send_message(call.message.chat.id, "Спокойной ночи!")
                 else:
                     bot.send_message(call.message.chat.id, "С вами так весело)):):):)", reply_markup = keyboard2)
