@@ -64,6 +64,10 @@ def callback_inline(call):
                     bot.send_message(call.message.chat.id, "Да ну, что вы. Я не обижаюсь. \nРоботы не обижаются и программы тоже)). \nРасскажи что-нибудь веселенькое-:)")
                 elif message.text == 'Веселое':
                     bot.send_message(call.message.chat.id, "Вот и отлично:) Давайте общаться.")
+                elif message.text == 'Спасибо':
+                    bot.send_message(call.message.chat.id, "Рад вас развеселить:-)")
+                elif message.text == 'Благодарю':
+                    bot.send_message(call.message.chat.id, "Не стоит благодарностей. Всегда к вашим услугам-)")
                 elif message.text == 'грустное':
                     bot.send_message(call.message.chat.id, "Я вас развеселю -^--^-, просто нажми Давай пошутим-^--^-", reply_markup = keyboard2)
                 elif message.text == 'Как погода?':
