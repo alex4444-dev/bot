@@ -108,4 +108,4 @@ def callback_inline(call):
                     bot.send_message(call.message.chat.id, "С вами так весело)):):):)", reply_markup = keyboard2)
 
 
- bot.polling()
+bot.polling()
