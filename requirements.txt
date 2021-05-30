@@ -1,0 +1,17 @@
+appdirs==1.4.4
+certifi==2021.5.30
+Cython==0.29.23
+Django==3.2.3
+docutils==0.17.1
+packaging==20.9
+pipenv==2021.5.29
+psutil==5.8.0
+pyowm==3.2.0
+Pygments==2.9.0
+pyparsing==2.4.7
+pyTelegramBotAPI==3.7.9
+python-telegram-bot==13.5
+requests==2.25.1
+six==1.16.0
+virtualenv==20.4.7
+virtualenv-clone==0.5.4
