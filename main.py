@@ -107,5 +107,5 @@ def callback_inline(call):
                 else:
                     bot.send_message(call.message.chat.id, "С вами так весело)):):):)", reply_markup = keyboard2)
 
-if __name__ == '__main__':
-     bot.polling(none_stop=True)
+
+ bot.polling()
